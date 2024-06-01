@@ -1,0 +1,284 @@
+/* =============Thuộc tính chung ================ */
+* {
+  box-sizing: border-box;
+}
+html {
+  /* thay đổi kích thước font chữ của trang */
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* =============Toàn bộ trang ================ */
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1440px;
+  /* đặt kích thước khi thu nhỏ trình duyệt sẽ k bị ẩn */
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* =============HEADER================ */
+.header {
+  background: #ffffff;
+}
+.header.fixed {
+  /* NEO cố định headder */
+  z-index: 1;
+  position: sticky;
+  top: -30px;
+}
+
+.header .body {
+  /* trên -trái phải - dưới */
+  padding: 57px 0px 8px;
+  display: flex;
+  align-items: center;
+}
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+  gap: 40px;
+}
+.nav a {
+  color: #2f3a3b;
+  font-size: 1.6rem;
+  padding: 8px 19.5px;
+}
+.action .action-link:hover,
+.nav a:hover {
+  color: #2f3a3b;
+  font-size: 1.6rem;
+
+  /* tạo hiệu ứng bóng đổ, khôngg gây giật giật */
+  text-shadow: 1px 0 0 currentColor;
+}
+.header .action-link {
+  margin-left: 157px;
+  margin-right: 24px;
+  color: #494949;
+  text-align: center;
+}
+.header .action-btn {
+  margin-left: 24px;
+  padding: 0 16px;
+  min-width: 108px;
+  line-height: 46px;
+  color: #1ebfc1;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid #1ebfc1;
+  display: inline-block;
+}
+.action .action-btn:hover {
+  /* đổi màu khi trỏ chuột vào nút đăng kí */
+  background: #1ebfc1;
+  color: white;
+  transition: 0s;
+}
+/* =============HERO=============== */
+.hero .body {
+  display: flex;
+  margin-top: 62px;
+}
+.hero .content-block {
+  margin-top: 150px;
+  width: 50%;
+  margin-right: 136px;
+}
+
+.hero .top-title {
+  color: #767e7e;
+  font-size: 1.4rem;
+}
+.hero .title {
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 117%;
+  margin-top: 20px;
+}
+.hero .desc {
+  color: #9da6a5;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 178%;
+  margin-top: 46px;
+}
+.hero .cta-group {
+  display: flex;
+  margin-top: 52px;
+}
+.hero .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 186px;
+  height: 68px;
+  border-radius: 14px;
+  background: #1ebfc1;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+.hero .play-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  margin-left: 50px;
+  box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.hero .content-block .play-video:hover {
+  background: #eee;
+  box-shadow: 0px 0px 0px 0px rgba(196, 26, 134, 0.5);
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.hero .content-block .btn:hover {
+  background: #eee;
+  box-shadow: 0px 0px 0px 0px rgba(196, 26, 134, 0.5);
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* ------hero phải */
+.hero .media-block {
+  width: 50%;
+
+  position: relative;
+}
+.hero .media-block .media {
+  width: 576px;
+  height: 631px;
+  object-fit: cover;
+  background: #e0f7f6;
+}
+.hero .media-courses {
+  display: flex;
+  position: relative;
+  justify-self: center;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  top: 149px;
+  left: -40px;
+  width: 157px;
+  height: 75px;
+  border-radius: 18px;
+  background: #fefefd;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+.hero .media-courses::after {
+  /* TẠO ĐƯỜNG KẺ BOOK */
+  position: absolute;
+  top: 45px;
+  left: 29px;
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 4px;
+  background: #fff;
+  border-radius: 999px;
+}
+.hero .media-courses .icon-courses {
+  margin-left: 25px;
+  width: 36px;
+  height: 40px;
+}
+.hero .media-courses .detail {
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 55px;
+}
+/* <!-- Schedules --> */
+.hero .media-Schedules {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 453px;
+  left: -65px;
+  width: 124px;
+  height: 132px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+.hero .media-Schedules span {
+  display: inline-block;
+  margin: 16px 35px 0;
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 16px;
+}
+.hero .media-block .icon-Schedules {
+  width: 74px;
+  height: 6px;
+  margin: 6px 25px;
+}
+/*  Our Active Students */
+.hero .media-Our {
+  position: absolute;
+  /* margin-top: 10px; */
+  top: 500px;
+  left: 324px;
+  width: 207px;
+  height: 90px;
+  border-radius: 24px;
+  background: #fefefd;
+  box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+.hero .media-Our .avt-list {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .media-Our .avt-list .img-our {
+  margin-top: 8px;
+  margin-left: -7px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+.hero .media-Our .detail {
+  margin-left: 36px;
+  margin-top: 20px;
+  color: #0d1111;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.hero .media-Our .img-our {
+  width: 33px;
+  height: 33px;
+  border-radius: 33px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+.hero .media-Our .avt-more {
+  background: #1ebfc1;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.hero .media-Our .avt-more span {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}

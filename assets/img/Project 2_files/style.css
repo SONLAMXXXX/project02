@@ -1,0 +1,103 @@
+/* =============Thuộc tính chung ================ */
+* {
+  box-sizing: border-box;
+}
+html {
+  /* thay đổi kích thước font chữ của trang */
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* =============Toàn bộ trang ================ */
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1440px;
+  /* đặt kích thước khi thu nhỏ trình duyệt sẽ k bị ẩn */
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* =============HEADER================ */
+.header {
+  background: #ffffff;
+}
+.header.fixed {
+  /* NEO cố định headder */
+  z-index: 1;
+  position: sticky;
+  top: -30px;
+}
+
+.header .body {
+  /* trên -trái phải - dưới */
+  padding: 57px 0px 8px;
+  display: flex;
+  align-items: center;
+}
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+  gap: 40px;
+}
+.nav a {
+  color: #2f3a3b;
+  font-size: 1.6rem;
+  padding: 8px 19.5px;
+}
+.action .action-link:hover,
+.nav a:hover {
+  color: #2f3a3b;
+  font-size: 1.6rem;
+
+  /* tạo hiệu ứng bóng đổ, khôngg gây giật giật */
+  text-shadow: 1px 0 0 currentColor;
+}
+.header .action-link {
+  margin-left: 157px;
+  margin-right: 24px;
+  color: #494949;
+  text-align: center;
+}
+.header .action-btn {
+  margin-left: 24px;
+  padding: 0 16px;
+  min-width: 108px;
+  line-height: 46px;
+  color: #1ebfc1;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid #1ebfc1;
+  display: inline-block;
+}
+.action .action-btn:hover {
+  /* đổi màu khi trỏ chuột vào nút đăng kí */
+  background: #1ebfc1;
+  color: white;
+  transition: 0s;
+}
+/* =============HERO=============== */
+.hero .body {
+  display: flex;
+}
+.hero .content-block {
+  margin-top: 150px;
+}
+
+.hero .top-title {
+  color: #767e7e;
+  font-size: 1.4rem;
+}
+.hero .title {
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.17;
+}
