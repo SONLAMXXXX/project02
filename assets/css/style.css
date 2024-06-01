@@ -152,7 +152,7 @@ a {
   cursor: pointer;
 }
 
-/* ------hero phải */
+/* ------hero phải------ */
 .hero .media-block {
   width: 50%;
 
@@ -281,4 +281,60 @@ a {
   text-align: center;
   font-size: 1rem;
   font-weight: 500;
+  line-height: normal;
+}
+/* =============FEATURE=============== */
+.feature .feature-body {
+  margin-top: 130px;
+}
+.feature .feature-top .desc {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.feature .heading-lv2 {
+  margin-top: 18px;
+  color: #0d1111;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 134%;
+  width: 577px;
+  height: 112px;
+}
+.feature .feature-top .desc {
+  margin-top: 18px;
+
+  color: #767e7e;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  width: 590px;
+}
+.feature .feature-bot {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  gap: 321px;
+}
+.feature .item .icon {
+  width: 102px;
+  height: 106px;
+}
+.feature .item .item-title {
+  margin-top: 26px;
+  color: #0d1111;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+}
+.feature .item .item-desc {
+  margin-top: 16px;
+  color: #9da6a5;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 167%;
 }
