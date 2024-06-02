@@ -10,6 +10,24 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 186px;
+  height: 68px;
+  border-radius: 14px;
+  background: #1ebfc1;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+.btn:hover {
+  background: #eee;
+  box-shadow: 0px 0px 0px 0px rgba(196, 26, 134, 0.5);
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 /* =============Toàn bộ trang ================ */
 a {
   text-decoration: none;
@@ -21,6 +39,14 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.heading-lv2 {
+  color: #0d1111;
+  font-size: 4.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 /* =============HEADER================ */
 .header {
   background: #ffffff;
@@ -77,6 +103,7 @@ a {
   border: 1px solid #1ebfc1;
   display: inline-block;
 }
+
 .action .action-btn:hover {
   /* đổi màu khi trỏ chuột vào nút đăng kí */
   background: #1ebfc1;
@@ -338,3 +365,279 @@ a {
   font-weight: 400;
   line-height: 167%;
 }
+/* =============POPULAR=============== */
+.popular {
+  margin-top: 130px;
+  padding-bottom: 180px;
+}
+/*------ popular-top------- */
+.popular-top .desc-top {
+  color: #767e7e;
+  font-family: Poppins;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.popular-top .heading-lv2 {
+  margin-top: 20px;
+}
+.row-view {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row-view .desc-bot {
+  width: 525px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 178%;
+}
+.row-view .view {
+  color: #1ebfc1;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+/*------ popular-bot------- */
+.popular-bot {
+  margin-top: 101px;
+  display: flex;
+  gap: 47px;
+  justify-content: space-evenly;
+}
+.popular .item {
+  position: relative;
+}
+.popular-bot .item .img-popular {
+  width: 359px;
+  height: 393px;
+  object-fit: cover;
+  flex-shrink: 0;
+  opacity: 0.8;
+  border-radius: 8px;
+
+  border-radius: 8px;
+  background: #d0efed;
+}
+.popular .content-popular {
+  position: relative;
+  top: 322px;
+  left: 17px;
+  position: absolute;
+
+  width: 325px;
+  height: 195px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+.popular .content-popular .title {
+  color: #0d1111;
+  text-align: center;
+  padding: 18px 0 0;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.popular .content-popular .price {
+  margin-top: 16px;
+  margin-left: 25px;
+  color: #767e7e;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.popular .content-popular .price span {
+  color: #0d1111;
+  font-family: Poppins;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.popular .content-popular .desc {
+  margin-top: 8px;
+  margin-left: 25px;
+  color: #9da6a5;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.popular .content-popular .static {
+  margin-top: 18px;
+  color: #9da6a5;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.popular .content-popular .static span::before {
+  margin: 0 10px;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1ebfc1;
+}
+/* =============COUNTDOWN=============== */
+.countdow {
+  margin-top: 140px;
+}
+.countdow .countdow-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  max-width: 862px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 131px;
+}
+
+.countdow .item .title {
+  color: #0d1111;
+  text-align: center;
+  font-size: 6.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.countdow .item .desc {
+  margin-top: 12px;
+  color: #767e7e;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+/* =============FEEDBACK=============== */
+.feedback {
+  margin-top: 227px;
+}
+.feedback .body {
+  position: relative;
+  padding: 37px 0;
+  display: flex;
+}
+.feedback blockquote {
+  max-width: 500px;
+  margin-top: 27px;
+  color: #5d6564;
+  font-size: 3.2rem;
+  line-height: 1.5;
+}
+.feedback .desc {
+  margin-top: 33px;
+  display: flex;
+  align-items: center;
+  color: #767e7e;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.feedback .desc strong {
+  color: #070707;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.feedback .desc::before {
+  margin-right: 6px;
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 2px;
+  background: #070707;
+}
+.feedback .feedback-cta {
+  margin-left: -30px;
+  display: flex;
+  margin-top: 52px;
+  display: flex;
+}
+.feedback-cta .cta-btn-group {
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #2ac9bf;
+}
+.feedback-cta .cta-btn-group:hover {
+  background: #eee;
+  box-shadow: 0px 0px 0px 0px rgba(196, 26, 134, 0.5);
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+/* fb khối phải */
+.feedback .feedback-right .ava {
+  position: absolute;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback .feedback-right .ava-fb1 {
+  margin-left: 400px;
+  margin-top: 88px;
+  width: 235px;
+  height: 235px;
+  border-radius: 235px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+.feedback .feedback-right .ava-fb2 {
+  margin-left: 250px;
+  margin-top: 239px;
+  width: 78px;
+  height: 78px;
+  flex-shrink: 0;
+  border-radius: 78px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+.feedback .feedback-right .ava-fb3 {
+  margin-left: 700px;
+  margin-top: 239px;
+  width: 90px;
+  height: 90px;
+}
+.feedback .feedback-right .ava-fb4 {
+  margin-left: 700px;
+  margin-top: 0;
+  width: 120px;
+  height: 120px;
+}
+.feedback .feedback-right .ava-fb5 {
+  margin-left: 300px;
+  margin-top: 0;
+  width: 100px;
+  height: 100px;
+}
+.feedback .feedback-right .ava-fb6 {
+  margin-left: 200px;
+  margin-top: 100px;
+  width: 100px;
+  height: 100px;
+}
+/* =============ADMIT=============== */
+.admit {
+  margin-top: 130px;
+  padding: 76px 135px 88px;
+  background: #def6f5;
+}
+.admit .body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.admit;
