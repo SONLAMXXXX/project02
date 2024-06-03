@@ -20,6 +20,7 @@ body {
   background: #1ebfc1;
   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
 }
+.feedback-cta .cta-btn-group:hover,
 .btn:hover {
   background: #eee;
   box-shadow: 0px 0px 0px 0px rgba(196, 26, 134, 0.5);
@@ -572,13 +573,13 @@ a {
   border-radius: 50%;
   background: #2ac9bf;
 }
-.feedback-cta .cta-btn-group:hover {
+/* .feedback-cta .cta-btn-group:hover {
   background: #eee;
   box-shadow: 0px 0px 0px 0px rgba(196, 26, 134, 0.5);
   color: #fff;
   transition: 0.5s;
   cursor: pointer;
-}
+} */
 /* fb khối phải */
 .feedback .feedback-right .ava {
   position: absolute;
@@ -640,4 +641,62 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.admit;
+.admit .desc {
+  margin-top: 18px;
+  color: #767e7e;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.admit .btn {
+  margin-right: 300px;
+}
+/* =============FOOTER=============== */
+.footer .body {
+  height: 400px;
+  background: #fff;
+}
+.footer .footer-list {
+  margin-top: 131px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .title {
+  color: #2e2e2e;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.footer .colum .list a {
+  color: #535353;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer .colum .list li {
+  margin-top: 20px;
+}
+.footer .colum:first-child {
+  margin-top: 60px;
+}
+.footer .list-item5 a {
+  display: flex;
+  align-items: center;
+}
+.footer .icon-social {
+  margin-right: 9px;
+}
+
+.footer .copyright {
+  margin-top: 80px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #b0b5b4;
+  font-size: 1.8rem;
+  line-height: normal;
+}
