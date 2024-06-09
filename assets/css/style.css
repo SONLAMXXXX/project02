@@ -28,6 +28,26 @@ body {
   transition: 0.5s;
   cursor: pointer;
 }
+/* Phong cách cho màn hình lớn */
+body {
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* Phong cách cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+  body {
+      font-size: 16px;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      font-size: 14px;
+      padding: 5px;
+  }
+}
 
 /* =============Toàn bộ trang ================ */
 a {
