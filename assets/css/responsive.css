@@ -1,0 +1,302 @@
+/* ======================PC====================== */
+@media (min-width:992px){
+    .action__header-drawer,
+    .menu-drawer__logo,
+    .close__menu,
+    #nav-list__mobile,
+    .menu-header__icon,    
+    .menu-checkbox{
+        display: none;
+    }
+}
+/*=========== tablet & mobile ====================== */
+@media (max-width: 991.98px){
+    html {
+        font-size: 54%;
+    }
+    .action__header,
+    .nav{
+        display: none;
+    }
+    .header .body{
+        position: relative;
+    }
+    .header__logo {
+        position: absolute;
+        left: 50%;
+        translate:-50% -100%;
+        z-index: 1;
+     
+    }
+    .menu__drawer--top{
+        justify-content: space-between;
+    }
+    .header.fixed {
+        position: static;
+    }
+ 
+    .menu-header__icon {
+        position: absolute;
+        top: 40px;
+        left: 50px;
+        width: 27px;
+        z-index: 1;
+
+    }
+    /* tạo lớp overlay */
+    .menu-overlay{
+        position: fixed;
+        background-color: rgba(11, 12, 12, 0.353);
+        inset: 0;
+        z-index: 1;
+        /* bình thường k tác động */
+        opacity: 0;
+        visibility: hidden ;
+        transition: 0.5s;
+    }
+    /* kiểm tra xem check box có được check không */
+    .menu-checkbox:checked ~ .menu-overlay{
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-drawer{
+        position: fixed;
+        background-color: hsl(166, 16%, 36%);
+        inset: 0 60% 0 0;
+        z-index: 2;
+        transition: 1s;
+        transform: translateX(-100%);
+    }
+    .menu-checkbox:checked ~ .menu-drawer{
+        transform: translateX(0);
+    }
+    .menu-drawer a {
+        color: #ffffff;
+        font-size: 1.6rem;
+      }
+      .menu-drawer li {
+        margin-top: 40px;
+      }
+      /* menu top */
+      .close__menu{
+        width: 27px;
+        color: #ffffff;
+      }
+      .menu__drawer--top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px 0 20px;
+      }
+      .nav-list__mobile{
+        margin-top: 25px;
+        margin-left: 30px;
+      }
+      .nav__link{
+        display: block;
+        font-size: 2rem;
+      }
+      .action__header-drawer{
+        border-top: 1px solid #ffffff7a;
+        margin-top: 30px;
+        padding: 20px;
+        display: flex;
+        column-gap: 30px;
+      }
+      .drawer__action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        height: 55px;
+        border-radius: 14px;
+        background: #1ebfc1;
+        box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+        gap
+      }
+      .body__hero{
+        flex-direction:column;
+      }
+      .content-block{
+        order: 2;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-block .desc {
+        margin: 10px  auto;
+    }
+      .hero .cta-group{
+      justify-content: center;
+        }
+    .hero .media-block {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .feature-bot {
+            display: grid;
+           column-gap: 30px;
+           /* grid-template-columns: ; */
+
+        }
+        .feature-bot .item {
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .feature .item .icon  {
+            width: 100%;
+        }
+        .feature .item .item-title {
+            text-align: center;
+        }
+        .item__hidden {
+            display: none;
+        }
+        .feedback__body{
+            flex-direction: column;
+        }
+        .feedback-right{
+            order: 1;
+           
+        }
+        .feedback-left {
+            order: 2;
+        }
+        .ava-fb2,
+        .ava-fb5,
+        .ava-fb6 {
+            display: none;
+        }
+        .ava-fb1 {
+            margin-left: 300px;
+        }
+        .admit .body {
+            flex-direction: column;
+        }
+        .admit-left{
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .admit .btn {
+            margin: 30px 0;
+        }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================== tablet ======================*/
+@media (min-width:768px) and (max-width:991.98px){
+
+}
+/*====================== mobile ======================*/
+@media (max-width:767.98px){
+    html {
+        font-size: 54%;
+    }
+    h1 {
+        font-size: 3.2rem;
+    }
+    .heading-lv2 {
+        font-size: 2.4rem;
+    }
+    .menu-drawer{
+        position: fixed;
+        background-color: hsl(166, 16%, 36%);
+        inset: 0 40% 0 0;
+        z-index: 2;
+        transition: 1s;
+        transform: translateX(-100%);
+    }
+    .menu__drawer--top{
+        padding: 15px 10px 0 20px;
+    }
+    .hero .media-block img {
+        width: 344px;
+        height: 400px;
+        object-fit: cover;
+    }
+    .hero .media-Our {
+        position: absolute;
+        /* margin-top: 10px; */
+        top: 305px;
+        left: 122px;
+        }
+        .footer__logo,
+        .ava-fb1,
+        .media-Schedules {
+            display: none;
+    }
+    .hero .title {
+        color: #0d1111;
+        font-size: 3.5rem;
+        
+    }
+    .hero .desc {
+        text-align: start;
+    }
+    .content-block .desc {
+        max-width: 100%;
+    }
+    .feature .heading-lv2{
+        max-width: 100%;
+        font-size: 2.8rem;
+    }
+
+    .feature .feature-top .desc{
+        max-width: 100%;
+    }
+    .popular-bot,
+    .feature-bot{
+        flex-direction: column;
+        column-gap: 30px;
+    }
+   .popular-bot .item2{
+    margin-top: 70px;
+   }
+   .
+   .countdow-list .title {
+
+    text-align: center;
+    font-size: 4.2rem;
+}
+.admit-left{
+padding: 0;
+}
+.heading__admit{
+    padding-top: 30px;
+}
+.countdow{
+margin-top: 80px;
+}
+.feedback{
+    margin-top: 80px;
+
+}
+.footer .colum .list a{
+    font-size: 1rem;
+}
+.footer .title {
+    font-size: 1.6rem;
+}
+.footer .copyright {
+    border-top: 1px solid #a9a9a9;
+}
+
+}

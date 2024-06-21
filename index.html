@@ -15,6 +15,8 @@
     <!-- CSS -->
 
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="" />
     <title>Project 2</title>
   </head>
@@ -22,44 +24,89 @@
     <!-- ==========HEADER============== -->
     <header class="header fixed">
       <div class="main-content">
-        <div class="body">
+        <div class="body body__header">
           <!-- logo -->
           <a href="#!">
-            <img src="./assets/img/Logo.svg" alt="Besnik." class="logo" />
+            <img src="./assets/img/Logo.svg" alt="Besnik." class="logo header__logo" />
           </a>
           <!-- NAV -->
           <nav class="nav">
-            <ul>
+            <ul class="nav-list" id="nav-list__pc">
               <li>
-                <a href="#!">Home</a>
+                <a class="nav__link" href="#!">Home</a>
               </li>
               <li>
-                <a href="#!">Features</a>
+                <a class="nav__link" href="#!">Features</a>
               </li>
               <li>
-                <a href="#!">Pricing</a>
+                <a class="nav__link" href="#!">Pricing</a>
               </li>
               <li>
-                <a href="#!">About</a>
+                <a class="nav__link" href="#!">About</a>
               </li>
               <li>
-                <a href="#!">Contact</a>
+                <a class="nav__link" href="#!">Contact</a>
               </li>
             </ul>
           </nav>
           <!-- btn-action-->
-          <div class="action">
+          <div class="action action__header">
             <a class="action-link" href="#!">Sign in</a>
             <a class="action-btn" href="#!">Sign up</a>
           </div>
         </div>
       </div>
     </header>
+    <!-- ======tablet & mobile header -->
+    <div class="mobile--header">
+      <!-- ----tablet-mobile-menu -->
+      <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
+     <label for="menu-checkbox">
+        <svg class="menu-header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentcolor"
+          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+        </svg>
+     </label>
+     <!-- overlay -->
+     <label for="menu-checkbox" class="menu-overlay"></label>
+      <!-- menu content -->
+      <div class="menu-drawer">
+        <!-- menu-top -->
+        <div class="menu__drawer--top">
+          <!-- logo -->
+          <a href="#!">
+            <img src="./assets/img/Logo.svg" alt="Besnik." class="logo menu-drawer__logo" />
+          </a>
+          <!-- icon close-->
+         <label for="menu-checkbox">
+            <svg class="close__menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentcolor"
+              d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/>
+            </svg>
+         </label>
+        </div>
+         <!-- nav mobile -->
+         <ul id="nav-list__mobile" class="nav-list__mobile"></ul>
+         <!-- dùng JS -->
+         <script>
+          const navPC = document.querySelector("#nav-list__pc");
+          const navMobile = document.querySelector("#nav-list__mobile");
+          // sao chép
+          navMobile.innerHTML = navPC.innerHTML
+         </script> 
+           <div class="action action__header-drawer">
+            <a class="action-link drawer__action" href="#!">Sign in</a>
+            <a class="action-btn drawer__action" href="#!">Sign up</a>
+          </div>
+      </div>
+     
+      
+    </div>
     <main>
       <!-- ==========MAIN HERO============== -->
       <div class="hero">
         <div class="main-content">
-          <div class="body">
+          <div class="body body__hero">
             <!-- khối trái -->
             <div class="content-block">
               <p class="top-title">😎 EASY LEARNING PLATFORM</p>
@@ -220,7 +267,7 @@
              
             </div>
             <!-- item2 -->
-            <div class="item">
+            <div class="item item2">
               <img class="img-popular" src="./assets/img/ppl2.png" alt="">
                 </img>
               <div class="content-popular">
@@ -235,7 +282,7 @@
              
             </div>
             <!-- item3 -->
-            <div class="item">
+            <div class="item item__hidden">
               <img class="img-popular" src="./assets/img/ppl3.png" alt="">
 
                 
@@ -281,7 +328,7 @@
       <!-- ==========FEEDBACK============== -->
       <div class="feedback">
         <div class="main-content">
-          <div class="body">
+          <div class="body feedback__body">
             <!-- khối trái -->
             <div class="feedback-left">
               <img src="./assets/img/fb.icon1.svg" alt="" class="icon-img">
@@ -300,8 +347,8 @@
             <div class="feedback-right">
               <img src="./assets/img/ava1.png" alt="" class="ava ava-fb1">
               <img src="./assets/img/ava2.png" alt="" class="ava ava-fb2">
-              <img src="./assets/img/ava3.png" alt="" class="ava ava-fb3">
-              <img src="./assets/img/ava4.png" alt="" class="ava ava-fb4">
+              <img src="./assets/img/ava3.png" alt="" class="ava ava-fb3" hidden>
+              <img src="./assets/img/ava4.png" alt="" class="ava ava-fb4" hidden>
               <img src="./assets/img/ava5.png" alt="" class="ava ava-fb5">
               <img src="./assets/img/ava6.png" alt="" class="ava ava-fb6">
             </div>
@@ -314,7 +361,7 @@
           <div class="body">
             <!-- Khối Trái -->
             <div class="admit-left">
-              <h2 class="heading-lv2">Ready to Get Admit</h2>
+              <h2 class="heading-lv2 heading__admit">Ready to Get Admit</h2>
               <p class="desc">Create your account and Boost your Career.</p>
             </div>
             <!-- khối phải  -->
@@ -331,7 +378,7 @@
               <!-- colum1 -->
           <div class="colum">
                 <a href="#!">
-                  <img src="./assets/img/Logo.svg" alt="" class="logo">
+                  <img src="./assets/img/Logo.svg" alt="" class="logo footer__logo">
                 </a>
           </div>
               <!-- colum2 -->

@@ -35,26 +35,26 @@ body {
 }
 
 /* Phong cách cho màn hình nhỏ hơn */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   body {
       font-size: 16px;
       padding: 10px;
   }
-}
+} */
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   body {
       font-size: 14px;
       padding: 5px;
   }
-}
+} */
 
 /* =============Toàn bộ trang ================ */
 a {
   text-decoration: none;
 }
 .main-content {
-  width: 1440px;
+  width: 1170px;
   /* đặt kích thước khi thu nhỏ trình duyệt sẽ k bị ẩn */
   max-width: calc(100% - 48px);
   margin-left: auto;
@@ -138,10 +138,12 @@ a {
 }
 .hero .content-block {
   margin-top: 150px;
-  width: 50%;
-  margin-right: 136px;
+  max-width: 100%;
+  /* margin-right: 136px; */
 }
-
+.content-block .desc{
+  max-width: 80%;
+}
 .hero .top-title {
   color: #767e7e;
   font-size: 1.4rem;
@@ -202,13 +204,13 @@ a {
 
 /* ------hero phải------ */
 .hero .media-block {
-  width: 50%;
+  max-width: 100%;
 
   position: relative;
 }
 .hero .media-block .media {
-  width: 576px;
-  height: 631px;
+  max-width: 576px;
+  max-height: 631px;
   object-fit: cover;
   background: #e0f7f6;
 }
@@ -345,7 +347,7 @@ a {
 .feature .heading-lv2 {
   margin-top: 18px;
   color: #0d1111;
-  font-size: 42px;
+  font-size: 4.2rem;
   font-weight: 700;
   line-height: 134%;
   width: 577px;
@@ -356,7 +358,7 @@ a {
 
   color: #767e7e;
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
   width: 590px;
 }
@@ -364,7 +366,7 @@ a {
   margin-top: 80px;
   display: flex;
   align-items: center;
-  gap: 321px;
+  gap: 30px;
 }
 .feature .item .icon {
   width: 102px;
@@ -445,12 +447,12 @@ a {
 }
 .popular .content-popular {
   position: relative;
-  top: 322px;
+  top: 302px;
   left: 17px;
   position: absolute;
 
   width: 325px;
-  height: 195px;
+  height: 175px;
   flex-shrink: 0;
   border-radius: 8px;
   background: #fff;
@@ -521,7 +523,7 @@ a {
 .countdow .item .title {
   color: #0d1111;
   text-align: center;
-  font-size: 6.2rem;
+  font-size: 4.2rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -601,6 +603,9 @@ a {
   cursor: pointer;
 } */
 /* fb khối phải */
+.feedback-right {
+  width: 60%;
+}
 .feedback .feedback-right .ava {
   position: absolute;
   width: 78px;
@@ -610,7 +615,7 @@ a {
 }
 
 .feedback .feedback-right .ava-fb1 {
-  margin-left: 400px;
+  margin-left: 430px;
   margin-top: 88px;
   width: 235px;
   height: 235px;
@@ -653,13 +658,13 @@ a {
 /* =============ADMIT=============== */
 .admit {
   margin-top: 130px;
-  padding: 76px 135px 88px;
   background: #def6f5;
 }
 .admit .body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 300px;
 }
 .admit .desc {
   margin-top: 18px;
@@ -669,6 +674,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  height: 100%;
 }
 .admit .btn {
   margin-right: 300px;
@@ -693,7 +699,7 @@ a {
 .footer .colum .list a {
   color: #535353;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
